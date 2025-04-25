@@ -1,0 +1,10 @@
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+  }
+  caption {
+    caption-side: top; /* Coloca el título de la tabla en la parte superior */
+    font-size: 1.5rem; /* Tamaño de fuente grande */
+    font-weight: bold; 
+    text-align: left; /* Alineación a la izquierda */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+  }
