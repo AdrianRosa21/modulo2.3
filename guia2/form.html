@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-3603a30n1691UzQ2Pv6RZhwQ+dy64/BUtbMDxHW2RtSHZApGhrRKUc4Mdk0879m7"
+    crossorigin="anonymous">
+    <script src="js/formulario.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Creacion de formularios usando JavaScript</h1>
+    </header>
+    <section>
+    <article id="design">
+    <form action="javascript:void(0);" action="POST" name="formconf" id="form" class="contact">
+    <fieldset class="contact-inner">
+    <div class="contact-input">
+    <label for="selcontrol" class="select">
+    <select name="selcontrol" id="selcontrol">
+    <option value="" selected="selected">Tipo de Control</option>
+    <option value="text">Cuadro de texto</option>
+    <option value="password">Contraseña</option>
+    <option value="textarea">Cuadro de texto largo</option>
+    <option value="checkbox">Selecciones múltiples</option>
+    <option value="radio">Botones de opción</option>
+    <option value="file">Archivos</option>
+    <option value="button">Botón genérico</option>
+    </select>
+    </label>
+    </div>
+    <div class="contact-input">
+    <input type="text" name="txtnum" maxlength="2"
+    autofocus placeholder="Número de Controles">
+    </div>
+    <div class="contact-submit">
+    <input type="submit" name="cadenviar" value="Enviar">
+    </div>
+    </fieldset>
+    </form>
+    </article>
+    <article id="view"></article>
+</section>
+</body>
+</html>
