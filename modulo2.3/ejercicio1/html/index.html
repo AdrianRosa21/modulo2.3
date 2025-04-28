@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body class="p-4"><!--el p4 da Padding general al body para que no esté pegado a los bordes.-->
+    <section class="container"><!--Centra el contenido y le da márgenes laterales.-->
+    <article>
+    <table class="table table-striped table-bordered"><!--Aplica estilo de tabla base Bootstrap.-->
+        <caption>Area de trabajo</caption>
+        <thead class="table-dark"><!--Aplica el color de fondo oscuro a la cabecera de la tabla.-->
+            <tr>
+                <th>Departamento</th>
+                <th>Presupuesto anual</th>
+            </tr>
+        </thead> <tbody>
+            <tr>
+                <td>Informatica</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>RRHH</td>
+                <td>35%</td>
+            </tr>
+            <tr>
+                <td>Contabilidad</td>
+                <td>25%</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="distribucion" class="color-10"></div>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </article>
+    </section>
+</body>
+</html>
