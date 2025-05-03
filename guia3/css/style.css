@@ -1,0 +1,116 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Fondo general */
+  body {
+    background: #f4f6f8;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Encabezado */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+  }
+  
+  /* Contenedor principal */
+  #container {
+    background: #fff;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Formularios */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+    font-size: 1em;
+    background-color: #fafafa;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  /* Botones */
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .resetbtn,
+  .submitbtn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .resetbtn {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .resetbtn:hover {
+    background-color: #c0392b;
+  }
+  
+  .submitbtn {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .submitbtn:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Etiquetas y títulos */
+  h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #34495e;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    #buttons {
+      flex-direction: column;
+    }
+  
+    .resetbtn,
+    .submitbtn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }

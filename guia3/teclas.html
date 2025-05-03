@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Sitio Web - Campo de Números</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <script src="js/filternumbers.js"></script>
+    <style>
+        body {
+            font-family: 'Francois One', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .text-h1 {
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-h1">Campo de números y evento de teclas</h1>
+    </header>
+    <section>
+        <article>
+            <form action="javascript:void(0)" name="frmask" class="pure-form">
+                <fieldset class="pure-group">
+                    <label for="txtserial">Ingrese un número:</label>
+                    <input type="number" 
+                           name="serialnumber" 
+                           id="txtserial" 
+                           class="pure-input-1-2"
+                           placeholder="Ejemplo: 12345" 
+                           onkeypress="return numbersOnly(this, event)"/>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+</html>
