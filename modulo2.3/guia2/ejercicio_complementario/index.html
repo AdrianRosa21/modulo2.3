@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Estudiantes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Registro de Estudiantes</h1>
+
+  <div id="inicio">
+    <label for="cantidad">¿Cuántos estudiantes desea registrar?</label>
+    <input type="number" id="cantidad" min="1" />
+    <button id="iniciarRegistro">Iniciar</button>
+  </div>
+
+  <form id="formulario" style="display: none;">
+    <label>Nombre:
+      <input type="text" id="nombre" required>
+    </label>
+    <label>Edad:
+      <input type="number" id="edad" required min="1">
+    </label>
+    <label>Especialidad:
+      <select id="especialidad" required>
+        <option value="">--Seleccione--</option>
+        <option value="Desarrollo de Software">Desarrollo de Software</option>
+        <option value="Electrónica">Electrónica</option>
+        <option value="Contaduría">Contaduría</option>
+      </select>
+    </label>
+    <button type="submit">Registrar</button>
+  </form>
+
+  <h2>Estudiantes Registrados</h2>
+  <table id="tabla">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Especialidad</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="resumen"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

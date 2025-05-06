@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de datos</title>
+</head>
+<body>
+    <header>
+    <h1>Inscripciones</h1>
+    </header>
+    <section>
+        <article id="container">
+            <p id="textoAyuda"></p>
+            <form action="javascript:void(0);" method="post" id="hongiat-form" name="registro">
+            <div id="wrapping" class="clearfix">
+            <section id="aligned">
+                <section id="ingreso">
+                    <input type="text" name="nombre" id="firstname" placeholder="Nombres..." autocomplete="off" tabindex="1" maxlength="25" class="txtinput requested" />
+                    <input type="text" name="apellido" id="lastname" placeholder="Apellidos..." autocomplete="off" tabindex="2" maxlength="25" class="txtinput requested" />
+                    <input type="email" name="email" id="email" placeholder="E-mail..." autocomplete="off" tabindex="3" maxlength="50" class="txtinput requested" />
+                    <input type="tel" name="telephone" id="phone" placeholder="Tel..." tabindex="4" class="txtinput" pattern="\d{7,9}" />
+                    <textarea id="describe" class="txtblock" placeholder="Descripción..." tabindex="5"></textarea>
+                  </section>
+                  
+                  <section id="aside" class="clearfix">
+                    <section id="recipientcase">
+                      <h3>Bachillerato:</h3>
+                      <select id="bto" name="bto" tabindex="6" required class="selemnu">
+                        <option value="gr1">Bachillerato General</option>
+                        <option value="eca">Bachillerato Técnico Opción Electrónica</option>
+                        <option value="conta">Bachillerato Técnico Opción Contador</option>
+                        <option value="ds">Bachillerato Técnico Opción Desarrollo de Software</option>
+                      </select>
+                    </section>
+                  
+                    <!-- Campo SELECT para indicar la mesa de trabajo -->
+                    <h3>Ciudad:</h3>
+                    <select id="ciudad" name="ciudad" tabindex="7" required class="selemnu">
+                      <option value="ss">San Salvador</option>
+                      <option value="soy">Soyapango</option>
+                      <option value="cd">Ciudad Delgado</option>
+                      <option value="mj">Mejicanos</option>
+                      <option value="ap">Apopa</option>
+                      <option value="ot">Otro</option>
+                    </select>
+                    <!-- Fin del campo select para la mesa de trabajo -->
+                  
+                  
+            </section>
+        </div>
+        <section id="buttons">
+            <input type="reset" name="reset" id="resetbtn" class="resetbtn" tabindex="8" value="Cancelar" />
+            <input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="9" value="Registrar" />
+            <br style="clear:both;" />
+        </section>
+    </form>
+        </article>
+    </section>
+    <script src="js/focusblurEvent.js"></script>
+</body>
+</html>
