@@ -1,9 +1,3 @@
-var nums=[1,2,3,4,5]; // Arreglo para almacenar los mensajes de ayuda
-for(num in nums){
-  console.log(nums[num]); // Imprime cada número en el arreglo
-  console.log("El indice del numero es:" + num + " Y el numero: " + nums[num]); // Imprime el índice de cada número en el arreglo
-}
-
 // Elemento donde se mostrará el mensaje
 var textoAyuda;
 
@@ -37,17 +31,3 @@ function inic() {
   registrarEscuchas(document.getElementById("resetbtn"), 7);
   registrarEscuchas(document.getElementById("submitbtn"), 8);
 }
-function registrarEscuchas(objeto, numeroMensaje){
-  objeto.addEventListener("focus", function(){
-    textoAyuda.style.visibility = "visible"; // Hacemos visible el mensaje de ayuda
-    textoAyuda.innerHTML = arregloAyuda[numeroMensaje]; // Mostramos el mensaje de ayuda correspondiente
-  },false);
-
-  objeto.addEventListener("blur", function(){
-    textoAyuda.style.visibility = "hidden"; // Ocultamos el mensaje de ayuda al perder el foco
-    textoAyuda.innerHTML = arregloAyuda[9]; // Limpiamos el contenido del mensaje de ayuda
-  },false);
-}
-
-window.addEventListener("load", inic, false); // Llamamos a la función inic() al cargar la página
-
